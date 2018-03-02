@@ -1,0 +1,45 @@
+<html ng-app="testApp">
+<head>
+    <title>AngularJS $Http service tutorial example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body ng-controller="testController">
+   <div class="jumbotron text-center">
+<h1> Infoslot Demo site </h1> 
+</div>
+<div class="container">
+	<div class="row mt-1">
+	<div class="col-sm-12">
+	<h3> Cross Site Scripting </h3>
+	<input type='text' ng-model="year" name="name" value=""></input>    
+
+    <button ng-click="getRequest()">Test Rest</button>
+<p style="display:inline" ng-bind-html-unsafe="test">{{ test }}</p>
+    <script src="script.js"></script>
+</div> <!-- end first col -->
+</div> <!-- closing row -->
+<div class="row mt-4">
+	<div class="col-sm-12">
+<h3> File Upload for Java Buf </h3>
+	<div th:if="${message}">
+	<h2 th:text="${message}"/>
+		<form method="POST" enctype="multipart/form-data" action="http://localhost:8080/">
+			<table>
+				<tr><td>File to upload:</td><td><input type="file" name="file" /></td></tr>
+				<tr><td></td><td><input type="submit" value="Upload" /></td></tr>
+			</table>
+		</form>
+	</div>
+		<ul>
+			<li th:each="file : ${files}">
+				<a th:href="${file}" th:text="${file}" />
+			</li>
+		</ul>
+	</div>
+
+
+
+</body>
+</html>
