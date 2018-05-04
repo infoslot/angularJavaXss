@@ -4,7 +4,13 @@
  The JAVA API is quick simple and still in development based on spring-boot.
  To create the JAVA API I used the tutorials here: https://spring.io/guides/gs/.
  
+ In mei 2018 I migrated the below manual instruction to a Dockerfile.
+ Just git clone en Docker build and you're read.
+ 
+ 
  In the AngularJS frontend I change things frequently so perhaps things are not working when you use this :-)
+ 
+******** MANUAL STEPS When not using Docker **************
  
  To get this basic setup working follow the steps:
  Running API:
