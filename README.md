@@ -5,7 +5,7 @@
  To create the JAVA API I used the tutorials here: https://spring.io/guides/gs/.
  
  In mei 2018 I migrated the below manual instruction to a Dockerfile.
- Just git clone en Docker build and you're read.
+ Just git clone en Docker build and you're ready.
  
  
  In the AngularJS frontend I change things frequently so perhaps things are not working when you use this :-)
